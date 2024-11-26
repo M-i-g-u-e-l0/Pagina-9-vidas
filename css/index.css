@@ -1,0 +1,194 @@
+.comment-form-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border-radius: 12px;
+    border: 2px solid #00ffea; 
+    box-shadow: 0px 0px 15px 4px rgba(0, 255, 255, 0.75); 
+    color: #ffffff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.comment-form-container:hover {
+    box-shadow: 0px 0px 20px 6px rgba(0, 255, 255, 1); 
+    transform: scale(1.02); 
+}
+
+.comment-form-container h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #00ffea; 
+}
+
+.comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+.form-group input[type="text"], .form-group textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #abee00;
+    background-color: #000000;
+    color: #ffffff;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus, .form-group textarea:focus {
+    border-color: #00ffea; 
+}
+
+.submit-group {
+    text-align: center;
+}
+
+.btn-send {
+    background-color: #000000; 
+    color: #00ff84; 
+    border: 2px solid #00ff84;
+    box-shadow: 0px 4px 15px rgba(0, 255, 132, 0.7); 
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+}
+
+.btn-send:hover {
+    background-color: #00ff84; 
+    color: #000000; 
+    box-shadow: 0px 4px 15px rgba(0, 255, 132, 1); 
+}
+
+.btn-send i {
+    font-size: 0.9rem;
+}
+
+.btn-video {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffffff; 
+    background-color: transparent; 
+    border: none;
+    font-size: 1.2rem; 
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-video {
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #ffffff; 
+    background-color: transparent; 
+    border: none; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase; 
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 5;
+}
+
+.btn-video::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 2px; 
+    background-color: #ff0000;
+    transition: width 0.3s ease;
+}
+
+.btn-video .line {
+    position: absolute;
+    background-color: transparent; 
+    transition: width 0.3s ease, height 0.3s ease;
+}
+
+.btn-video .line.-right {
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 0;
+    background-color: #ff0000; 
+}
+
+.btn-video .line.-top {
+    left: 0;
+    top: 0;
+    width: 0; 
+    height: 2px;
+    background-color: #ff0000; 
+}
+
+.btn-video .line.-left {
+    left: 0;
+    top: 0;
+    width: 2px;
+    height: 0; 
+    background-color: #ff0000; 
+}
+
+.btn-video .line.-bottom {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff0000; 
+}
+
+.btn-video:hover {
+    color: #37ff00bb; 
+}
+
+.btn-video:hover .line.-right,
+.btn-video:hover .line.-left {
+    height: 100%;
+}
+
+.btn-video:hover .line.-top,
+.btn-video:hover .line.-bottom {
+    width: 100%; 
+}
+
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.comment-info {
+    flex-grow: 1;
+    margin-left: 10px;
+}
+
+

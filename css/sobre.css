@@ -1,0 +1,45 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#sobre {
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px; 
+    text-align: justify; 
+}
+
+#sobre p {
+    margin-bottom: 20px;
+    text-align: justify; 
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.feature {
+    background-color: #16a085; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5px; 
+    flex-basis: 40%; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    background-color: #1abc70; 
+}
+
+.feature i {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #ecf0f1;
+}

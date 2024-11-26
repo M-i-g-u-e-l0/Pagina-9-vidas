@@ -1,0 +1,111 @@
+#descargar {
+    padding: 30px 20px;
+    margin-top: 20px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative; 
+}
+
+#descargar .image-container {
+    position: relative;
+    width: 60%;
+    max-width: 700px;
+    margin-top: -20px;
+    border-radius: 15px;
+    background: #333;
+    padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.6);
+    overflow: hidden; 
+}
+
+#descargar .image-container img {
+    width: 100%;
+    height: auto; 
+    border-radius: 10px; 
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)); 
+    max-height: 300px; 
+}
+
+#descargar .image-container:hover {
+    box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.9);
+}
+
+#descargar .content {
+    max-width: 35%;
+    text-align: justify;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#descargar p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: white; 
+}
+
+#descargar button {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px 30px;
+    background-color: #f39c12;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: inline-flex; 
+    align-items: center; 
+    margin-left: 30px; 
+}
+
+#descargar button:hover {
+    background-color: #e67e22;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+#descargar button i {
+    margin-right: 10px; 
+}
+
+.arrow {
+    font-size: 40px;
+    color: #e74c3c;
+    animation: bounce 1.5s infinite;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 800px) {
+    #descargar {
+        flex-direction: column;
+    }
+
+    #descargar .content,
+    #descargar .image-container {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    #descargar button {
+        margin-left: 0;
+        margin-top: 15px;
+    }
+}
